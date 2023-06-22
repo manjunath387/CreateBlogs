@@ -1,0 +1,16 @@
+<%- include("partials/header") -%>
+
+
+<div class="container">
+    <div class="blog-post">
+      <div class="post-thumbnail">
+        <img src="data:image/jpeg;base64,<%= fetchImage.buffer.toString('base64') %>" alt="Blog Image">
+      </div>
+      <div class="post-content">
+       <h1> <%=fetchPostTitle %></h1>
+       <p><%= fetchPostBody %> </p>
+      </div>
+    </div>
+  </div>
+
+ 
