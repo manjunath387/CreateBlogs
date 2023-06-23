@@ -40,7 +40,7 @@ app.use(express.static("public"));
 app.get("/", async (req, res) => {
   try {
     const blogPosts = await Blog.find({});
-    res.render("Home", { NewPosts: blogPosts });
+    res.render("home", { NewPosts: blogPosts });
     
     // res.send(blogPosts);
   } catch (error) {
